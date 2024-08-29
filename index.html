@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./FontAwesomes/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Font Google Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./Images/favicon/favicon.ico" type="image">
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-[#000] transition">
+
+
+  <div class="flex">
+      <div
+        class="nav-wrapper fixed top-0 left-0 lg:top-0 lg:left-0 text-center px-5 transition lg:p-5 w-16 overflow-hidden z-40 lg:w-[300px] bg-primary h-[107vh] lg:h-screen">
+        <h1
+          class="text-2xl mt-3 italic font-bold tracking-wider text-white w-fit mx-auto relative hidden lg:block pb-5 before:content-[''] before:w-full before:z-0 before:bg-white before:h-[3px] before:absolute before:bottom-[-7px] before:left-0  after:content-[''] after:-translate-x-2/4 after:w-4 after:h-4 after:rounded-full after:bg-white after:bottom-[-12px] after:z-10 after:left-2/4 after:absolute">
+          Consequences</h1>
+        <ul class="row mt-16 lg:ml-2 h-full flex flex-col justify-center items-center lg:block lg:h-fit">
+          <li class="dashboard flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-house text-[17px] text-white cursor-pointer"></i>
+            <span class="hidden lg:block text-[#fff] text-[20px] font-bold cursor-pointer">Dashboard</span>
+          </li>
+          <li class="setting flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-gear text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer" >Settings</span>
+          </li>
+          <li class="calander flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-calendar-days text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Calender</span>
+          </li>
+          <li class="files flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-folder-open text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Files</span>
+          </li>
+          <li class="contact flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-id-card text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Contact</span>
+          </li>
+        </ul>
+      </div>
+
+    <div class="page-section w-full z-10 relative lg:pl-[300px]">
+      <div class="header py-7 px-4 bg-primary">
+        <div class="container">
+          <div class="flex items-center justify-end gap-3">
+            <img src="./Images/main.png" class="w-14 h-14 rounded-full" alt="">
+            <div class="content-text-head">
+              <h2 class="text-[17px] font-medium text-white">Alvar</h2>
+              <span class="block text-secondary text-sm font-medium">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="add-task transition duration-500 border-2 border-borderTask custom-width bg-black w-full h-screen space-y-32 p-7 z-10 absolute top-[112px] -translate-x-[200%] sm:py-14">
+        <div class="flex justify-between items-center">
+          <h2 class="text-white text-xl font-bold">Add New Task</h2>
+          <div class="icon-x cursor-pointer">
+            <i class="fa-solid fa-xmark text-white text-[26px]"></i>
+          </div>
+        </div>
+
+        <div class="form">
+          <div class="task-title flex flex-col mb-8">
+            <label for="title" class="text-secondary font-semibold text-xl mb-4">Task Title</label>
+            <input type="text" class="w-full outline-none border-2 border-white text-white text-xl bg-transparent p-4">
+          </div>
+
+          <div class="custom-message flex flex-col">
+            <label for="message" class="text-secondary font-semibold text-xl mb-4">Custom
+              Message(Opitional)</label>
+            <input type="text" class="w-full outline-none border-2 border-white text-white text-xl bg-transparent p-4">
+          </div>
+        </div>
+
+        <div class="select-level w-full text-center">
+          <h3 class="text-white text-xl mb-4">Select Level</h3>
+          <select
+            class="sm:w-1/3 w-full py-2 pb-[12px] text-2xl text-center cursor-pointer text-secondary bg-black outline-none border-2 border-white"
+            name="" id="">
+            <option class="text-sm text-white" value="high">High</option>
+            <option class="text-sm text-white" value="medium">Medium</option>
+            <option class="text-sm text-white" value="low">Low</option>
+          </select>
+        </div>
+
+        <div class="btn-task flex items-center gap-5 margin-import justify-center">
+          <div class="cancel">
+            <button class="block text-white bg-secondary px-5 py-1 rounded-md">Cancel</button>
+          </div>
+          <div class="add">
+            <button class="text-white bg-blue-500 px-5 py-1 rounded-md">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="middle-system grid grid-cols-1 lg:grid-cols-12 gap-5 pt-7 px-5 z-0 relative">
+        <div class="middle col-span-1 lg:col-span-8">
+          <!-- Content Box with adding task -->
+          <div class="content-box">
+            <div class="one-peice w-full flex justify-between gap-3 items-center flex-wrap">
+              <div
+                class="main-box text-center cursor-pointer mb-3 bg-middle_color w-full h-[12.3rem] flex justify-center items-center flex-col p-7 rounded-md">
+                <div class="menu-x text-white text-3xl cursor-pointer">
+                  <i
+                    class="fa-solid fa-xmark z-10 text-[16px] relative leading-import before:content-[''] before:absolute before:w-[30px] before:h-[30px] before:left-[-13px] before:top-[-10px] before:bg-[#6a6a6a] before:rounded-full"></i>
+                  <span class="block mt-5 text-secondary text-2xl">Add New Task</span>
+                </div>
+              </div>
+              <div class="adding-element w-full flex justify-between gap-3 items-center flex-wrap">
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects -->
+          <div class="project mb-24">
+            <div
+              class="project flex flex-col justify-normal items-start gap-y-5 sm:flex sm:justify-between sm:items-center sm:flex-row mt-16">
+              <h2 class="text-white text-3xl font-bold">Project</h2>
+              <div class="project-index flex items-center gap-3">
+                <button
+                  class="going transition block py-1 px-4 rounded-md font-bold bg-[#F0F0F0] text-red active_btn">Ongoing</button>
+                <button
+                  class="pending transition block py-1 px-4 rounded-md font-bold bg-[#F0F0F0] text-red">Pending</button>
+              </div>
+            </div>
+
+            <div class="content-project w-full flex justify-between gap-3 items-center flex-wrap mt-9">
+            </div>
+          </div>
+
+          <!-- Table -->
+          <div class="head-table mb-24">
+            <div
+              class="design-heading bg-[#39393987] rounded-md py-5 px-4 gap-y-6 flex sm:justify-between sm:items-center flex-col sm:flex-row">
+              <div class="calender flex gap-4 items-center text-xl">
+                <i class="fa-regular fa-calendar-days text-white"></i>
+                <span class="block text-secondary font-bold">Dec 2022</span>
+              </div>
+
+              <div class="admin flex flex-col lg:flex-row gap-3">
+                <select class="bg-[#39393987] text-secondary px-2 py-1 text-xl rounded-sm" id="my_select">
+                  <option value="none" class="text-gray-700 font-bold" disabled>Filter</option>
+                  <option class="all text-white font-bold" value="All">All</option>
+                  <option class="text-white font-bold" value="Admin">Admin</option>
+                  <option class="partner text-white font-bold" value="Partner">Partner</option>
+                </select>
+                <select class="bg-[#39393987] text-secondary px-2 py-1 text-xl rounded-sm" id="sortSelect">
+                  <option value="none" class="text-gray-700 font-bold" disabled>Sort By</option>
+                  <option class="text-white font-bold" value="atp">Admin-Partner</option>
+                  <option class="text-white font-bold" value="pta">Partner-Admin</option>
+                  <option class="text-white font-bold" selected value="basic">Default</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="poem">
+              <table
+                class="w-full bg-[#39393987] text-secondary border-collapse font-bold mt-8 border border-[#393939] text-sm">
+                <thead>
+                  <tr>
+                    <td class="p-2 border border-[#393939]">Name</td>
+                    <td class="p-2 border border-[#393939]">User</td>
+                    <td class="p-2 border border-[#393939]">Role</td>
+                    <td class="p-2 border border-[#393939]">Phone</td>
+                    <td class="p-2 border border-[#393939]">Expire DATA</td>
+                    <td class="p-2 border border-[#393939]">Status</td>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="left-side col-span-1 lg:col-span-4 ">
+          <div class="overall p-3 bg-[#39393987] rounded-md">
+
+            <div class="flex justify-between items-center gap-3">
+              <h2 class="text-2xl text-white font-bold">Overall Progress</h2>
+              <span class="block text-[#5d513a] font-bold text-sm mt-1">See All</span>
+            </div>
+
+            <div class="flex  items-center gap-4 text-[17px] my-5">
+              <i class="fa-regular fa-calendar-days text-white"></i>
+              <span class="block text-white">Last 7 days</span>
+              <i class="fa-solid fa-angle-down text-white"></i>
+            </div>
+
+            <div class="progress-blush my-5 gap-x-4 gap-y-8 justify-between flex items-center flex-wrap">
+              <div
+                class="blush flex items-center gap-x-4 relative before:content-[''] before:absolute before:w-8 before:h-8 before:bg-middle_color before:top-[-3px] before:left-[-6px] before:rounded-full before:z-[-1]">
+                <i class="fa-solid fa-broom text-white"></i>
+                <span class="block text-secondary font-semibold">24 in Progress</span>
+              </div>
+              <div
+                class="total-projects relative  flex items-center gap-x-4 before:content-[''] before:absolute before:w-8 before:h-8 before:bg-middle_color before:top-[-4px] before:left-[-8px] before:rounded-full before:z-[-1]">
+                <i class="fa-solid fa-rotate-right text-white"></i>
+                <span class="block text-secondary font-semibold">45 Total Projects</span>
+              </div>
+              <div
+                class="upcoming flex items-center justify-center text-center gap-x-4 relative z-10  before:content-[''] before:absolute before:w-8 before:h-8 before:bg-middle_color before:top-[-4px] before:left-[-8px] before:rounded-full before:z-[-1]">
+                <i class="fa-solid fa-spinner text-white"></i>
+                <span class="block text-secondary font-semibold">12 Upcoming</span>
+              </div>
+            </div>
+
+            <div class="chart position-relative w-full  bg-[#cfe2ff]">
+              <canvas id="myChart"></canvas>
+            </div>
+
+
+          </div>
+
+          <div class="chat p-3 bg-[#39393987] rounded-md mt-7">
+            <div class="flex justify-between items-center gap-3">
+              <h2 class="text-2xl text-white font-bold">Chat</h2>
+              <span class="block text-[#5d513a] font-bold text-sm mt-1">See All</span>
+            </div>
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-1.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Michal</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-1.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Michal</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-1.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Michal</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-1.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Michal</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-2.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">John</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-3.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Sara</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-4.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Nada</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-5.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Rino</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-6.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Tid</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-7.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Kim</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-8.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Bog</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-9.jpg"  class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Omar</span>
+                  </div>
+                </div>
+
+
+                <div class="swiper-slide">
+                  <div class="wrapping">
+                    <img src="./Images/TableImages/img-10.jpg" class="" alt="">
+                    <span class="block mt-3 text-secondary font-bold text-sm">Lily</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-activity p-3 bg-[#39393987] pb-9 rounded-md mt-7">
+            <h2 class="text-2xl text-white font-bold">Team activity</h2>
+
+            <div class="content-active mt-8 ">
+              <div class="flex gap-5 justify-between">
+                <div class="contains-activity flex gap-3 flex-wrap ">
+                  <img src="./Images/TableImages/img-4.jpg" class="w-14 h-14  rounded-full" alt="">
+                  <div class="text-active">
+                    <h3 class="text-xl text-white font-bold mb-2">Ayman M.Mohammed</h3>
+                    <span class="block text-secondary text-[13px] font-bold">Frontend Developer</span>
+                  </div>
+                </div>
+                <span class="block text-secondary text-xl font-bold">5 min ago</span>
+              </div>
+            </div>
+
+            <span class="block text-[16px] font-bold text-white my-8 sm:ml-4">How Can i Buy only the design</span>
+
+            <div
+              class="flex-icon-activity pb-6 border-b-[2px] border-dashed border-secondary flex justify-between items-center  lg:justify-start gap-12  lg:pl-4 text-secondary font-semibold">
+              <div class="text-center">
+                <i class="fa-solid fa-comment"></i>
+                <span class="num ml-1" date-goal="100">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-heart"></i>
+                <span class="num ml-1" date-goal="60">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-share"></i>
+                <span class="num ml-1" date-goal="80">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-activity p-3 bg-[#39393987] pb-9 rounded-md mt-7">
+            <h2 class="text-2xl text-white font-bold">Team activity</h2>
+
+            <div class="content-active mt-8 ">
+              <div class="flex gap-5 justify-between">
+                <div class="contains-activity flex gap-3 flex-wrap ">
+                  <img src="./Images/TableImages/img-6.jpg" class="w-14 h-14  rounded-full" alt="">
+                  <div class="text-active">
+                    <h3 class="text-xl text-white font-bold mb-2">William Loqso
+                    </h3>
+                    <span class="block text-secondary text-[13px] font-bold">Frontend Developer</span>
+                  </div>
+                </div>
+                <span class="block text-secondary text-xl font-bold">3 min ago</span>
+              </div>
+            </div>
+
+            <span class="block text-[16px] font-bold text-white my-8 sm:ml-4">How Can i Publish my project</span>
+
+            <div
+              class="flex-icon-activity pb-6 border-b-[2px] border-dashed border-secondary flex justify-between lg:justify-start  gap-12 lg:pl-4 text-secondary font-semibold">
+              <div class="text-center">
+                <i class="fa-solid fa-comment"></i>
+                <span class="num ml-1" date-goal="100">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-heart"></i>
+                <span class="num ml-1" date-goal="60">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-share"></i>
+                <span class="num ml-1" date-goal="80">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="team-activity p-3 bg-[#39393987] pb-9 rounded-md mt-7">
+            <h2 class="text-2xl text-white font-bold">Team activity</h2>
+
+            <div class="content-active mt-8 ">
+              <div class="flex gap-5 justify-between">
+                <div class="contains-activity flex gap-3 flex-wrap ">
+                  <img src="./Images/TableImages/img-2.jpg" class="w-14 h-14  rounded-full" alt="">
+                  <div class="text-active">
+                    <h3 class="text-xl text-white font-bold mb-2">Sareh Hosten
+                    </h3>
+                    <span class="block text-secondary text-[13px] font-bold">Backend Developer
+                    </span>
+                  </div>
+                </div>
+                <span class="block text-secondary text-xl font-bold">4 min ago</span>
+              </div>
+            </div>
+
+            <span class="block text-[16px] font-bold text-white my-8 sm:ml-4">How Can i Use the application</span>
+
+            <div
+              class="flex-icon-activity pb-6 border-b-[2px] border-dashed border-secondary flex justify-between lg:justify-start gap-12 lg:pl-4 text-secondary font-semibold">
+              <div class="text-center">
+                <i class="fa-solid fa-comment"></i>
+                <span class="num ml-1" date-goal="100">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-heart"></i>
+                <span class="num ml-1" date-goal="60">0</span>
+              </div>
+              <div class="text-center">
+                <i class="fa-solid fa-share"></i>
+                <span class="num ml-1" date-goal="80">0</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="latest-task p-3 bg-[#39393987] pb-9 rounded-md mt-7">
+            <h2 class="text-white text-3xl text-center font-bold tracking-wider mb-9">Latest Task</h2>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Start up New Design</h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">Template For New Client To Change Some info
+                in his Project</span>
+            </div>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Work For Some Tamplates To Make Its Full Responsive</h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">ReChange For Some Templates at Small
+                Media</span>
+            </div>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Start up New Design</h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">Tamplate For New Client To Change Some info
+                in his Project</span>
+            </div>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Desgin Meeting
+              </h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">Creating The Main UI Assests and
+                illustaryion For The Upcoming landing Pages Screens</span>
+            </div>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Client Meeting
+              </h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">Updating The Current User interface of
+                Header in The Picko Desinge Project</span>
+            </div>
+
+            <div class="text-task py-5 border-b border-[#333333]">
+              <h3 class="text-white font-bold text-[17px]">Admin Meeting
+              </h3>
+              <span class="text-[11px] block mt-2 font-bold text-secondary">Development Task Assign For The Product Page Project collaboration With The Design</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          375: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          400: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 8,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 50,
+          },
+          1100: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1300: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          1400: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          1500: {
+            slidesPerView: 6,
+            spaceBetween: 30,
+          }
+        },
+      });</script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./JsFiles/chart.js"></script>
+    
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>

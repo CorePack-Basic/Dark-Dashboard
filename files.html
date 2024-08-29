@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./FontAwesomes/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Font Google Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./Images/favicon/favicon.ico" type="image">
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-[#000] transition">
+
+
+  <div class="flex">
+      <div
+        class="nav-wrapper fixed top-0 left-0 lg:top-0 lg:left-0 text-center px-5 transition lg:p-5 w-16 overflow-hidden z-40 lg:w-[300px] bg-primary h-[107vh] lg:h-screen">
+        <h1
+          class="text-2xl mt-3 italic font-bold tracking-wider text-white w-fit mx-auto relative hidden lg:block pb-5 before:content-[''] before:w-full before:z-0 before:bg-white before:h-[3px] before:absolute before:bottom-[-7px] before:left-0  after:content-[''] after:-translate-x-2/4 after:w-4 after:h-4 after:rounded-full after:bg-white after:bottom-[-12px] after:z-10 after:left-2/4 after:absolute">
+          Consequences</h1>
+        <ul class="row mt-16 lg:ml-2 h-full flex flex-col justify-center items-center lg:block lg:h-fit">
+          <li class="dashboard flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-house text-[17px] text-white cursor-pointer"></i>
+            <span class="hidden lg:block text-[#fff] text-[20px] font-bold cursor-pointer">Dashboard</span>
+          </li>
+          <li class="setting flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-gear text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer" >Settings</span>
+          </li>
+          <li class="calander flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-calendar-days text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Calender</span>
+          </li>
+          <li class="files flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-folder-open text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Files</span>
+          </li>
+          <li class="contact flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-id-card text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Contact</span>
+          </li>
+        </ul>
+      </div>
+
+    <div class="page-section w-full z-10 relative lg:pl-[300px]">
+      <div class="header py-7 px-4 bg-primary">
+        <div class="container">
+          <div class="flex items-center justify-end gap-3">
+            <img src="./Images/main.png" class="w-14 h-14 rounded-full" alt="">
+            <div class="content-text-head">
+              <h2 class="text-[17px] font-medium text-white">Alvar</h2>
+              <span class="block text-secondary text-sm font-medium">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-12  gap-5 pt-7 px-5 z-0 relative">
+        <div class="middle-system col-span-12 ">
+
+            <h2 class="text-white font-bold text-4xl tracking-wide">Files</h2>
+
+            <div class="flex   justify-center flex-wrap gap-x-9 gap-y-8 mt-14 mb-16">
+
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Assest</span>
+                </div>
+
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Doucments</span>
+                </div>
+
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Oribble</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Inpinations</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Meckups</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Projects</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Videos</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Images</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Audios</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Movies</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Shorts</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Exams</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Data</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Texts</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Comics</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Tamplates</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Courses</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Effects</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Source</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Elzero</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Algorthims</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Designs</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">JavaScript</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Tutorials</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Problems</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Data-base</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Scripts</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Functions</span>
+                </div>
+
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">NodeJs</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Games</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Schedule</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Tasks</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Windows</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">OOP</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">PHP</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Laraval</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Users</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Admin</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">
+                        Adv-Js</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Media</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Records</span>
+                </div>
+                <div class="file flex flex-col text-center w-[100px]">
+                    <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-8xl"></i>
+                    <span class="text-white font-bold tracking-wider text-[18px]">Musics</span>
+                </div>
+            </div>
+
+
+            <div class="active-files">
+                <h2 class="text-white font-bold text-3xl tracking-wide mb-9">Active Files</h2>
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">Assest</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">Today</p>
+                        <p class="font-semibold tracking-wider">12.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">Doucments</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">Yestarday</p>
+                        <p class="font-semibold tracking-wider">11.6GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">
+                            Problems</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">Last Month</p>
+                        <p class="font-semibold tracking-wider">13.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">Assest</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">
+                            Tutorials</p>
+                        <p class="font-semibold tracking-wider">46.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">
+                            D-Structure</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">24 July 2022</p>
+                        <p class="font-semibold tracking-wider">52.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">Scripts</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">16 Oct 2022</p>
+                        <p class="font-semibold tracking-wider">98.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">
+                            Algorthims</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">16 Oct 2022</p>
+                        <p class="font-semibold tracking-wider">8.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">
+                            Movies</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">17 Jun, 2022</p>
+                        <p class="font-semibold tracking-wider">13.5GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">JavaScript</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">Today</p>
+                        <p class="font-semibold tracking-wider">14GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+
+                <div class="file-memory flex items-center justify-between gap-4  flex-wrap bg-[#39393987] px-2 mb-8">
+                    
+                    <div class="file-left w-full sm:w-[60%] flex items-center gap-3">
+                        <i class="fa-solid fa-folder mb-2 text-[#f6dc87] text-3xl"></i>
+                        <span class="text-white font-bold tracking-wider text-[17px]">Data-Base</span>
+                    </div>
+
+                    <div class="file-right flex items-center justify-between  text-white w-full sm:w-[37%] gap-x-3">
+                        <p class="font-semibold tracking-wider">Today</p>
+                        <p class="font-semibold tracking-wider">9GB</p>
+                        <i class="fa-solid fa-ellipsis pe-3 font-semibold tracking-wider"></i>
+                    </div>
+                </div>
+
+       
+            </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <script src="./JsFiles/files.js"></script>
+</body>
+
+</html>

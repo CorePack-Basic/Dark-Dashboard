@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./FontAwesomes/css/all.min.css">
+
+
+  <!-- Font Google Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./Images/favicon/favicon.ico" type="image">
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-[#000] transition">
+
+
+  <div class="flex">
+    <div
+      class="nav-wrapper fixed top-0 left-0 lg:top-0 lg:left-0 text-center px-5 transition lg:p-5 w-16 overflow-hidden z-40 lg:w-[300px] bg-primary h-[107vh] lg:h-screen">
+      <h1
+        class="text-2xl mt-3 italic font-bold tracking-wider text-white w-fit mx-auto relative hidden lg:block pb-5 before:content-[''] before:w-full before:z-0 before:bg-white before:h-[3px] before:absolute before:bottom-[-7px] before:left-0  after:content-[''] after:-translate-x-2/4 after:w-4 after:h-4 after:rounded-full after:bg-white after:bottom-[-12px] after:z-10 after:left-2/4 after:absolute">
+        Consequences</h1>
+      <ul class="row mt-16 lg:ml-2 h-full flex flex-col justify-center items-center lg:block lg:h-fit">
+        <li class="dashboard flex gap-8 mb-7 transition hover:animate-wingle items-center">
+          <i class="fa-solid fa-house text-[17px] text-white cursor-pointer"></i>
+          <span class="hidden lg:block text-[#fff] text-[20px] font-bold cursor-pointer">Dashboard</span>
+        </li>
+        <li class="setting flex gap-8 mb-7 transition hover:animate-wingle items-center">
+          <i class="fa-solid fa-gear text-[17px] text-secondary cursor-pointer"></i>
+          <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Settings</span>
+        </li>
+        <li class="calander flex gap-8 mb-7 transition hover:animate-wingle items-center">
+          <i class="fa-regular fa-calendar-days text-[17px] text-secondary cursor-pointer"></i>
+          <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Calender</span>
+        </li>
+        <li class="files flex gap-8 mb-7 transition hover:animate-wingle items-center">
+          <i class="fa-solid fa-folder-open text-[17px] text-secondary cursor-pointer"></i>
+          <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Files</span>
+        </li>
+        <li class="contact flex gap-8 mb-7 transition hover:animate-wingle items-center">
+          <i class="fa-regular fa-id-card text-[17px] text-secondary cursor-pointer"></i>
+          <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Contact</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-section w-full z-10 relative lg:pl-[300px]">
+      <div class="header py-7 px-4 bg-primary">
+        <div class="container">
+          <div class="flex items-center justify-end gap-3">
+            <img src="./Images/main.png" class="w-14 h-14 rounded-full" alt="">
+            <div class="content-text-head">
+              <h2 class="text-[17px] font-medium text-white">Alvar</h2>
+              <span class="block text-secondary text-sm font-medium">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pageTwo  gap-5 pt-7 px-5 z-0 relative ">
+        <div class="middle  ">
+
+          <h1 class="text-white font-bold text-4xl tracking-wide">Settings</h1>
+
+          <div class="select-type bg-[#39393987] mt-10 border-b border-[#777777] rounded-sm">
+            <ul class="user-security flex items-center gap-x-2">
+              <li class="securing p-5 cursor-pointer  text-secondary font-bold tracking-wide">Users</li>
+              <li class="security-page p-5 cursor-pointer text-secondary font-bold tracking-wide">Security</li>
+            </ul>
+          </div>
+
+          <div class="grid grid-cols-1 xl:grid-cols-12 mt-16 gap-14 relative z-0 ">
+            <div class="right-secure col-span-1 xl:col-span-4 place-content-center pl-3">
+              <h2 class="text-white font-bold text-3xl tracking-wide">Users</h2>
+              <p class="text-secondary mt-3 leading-7 mb-6 font-semibold">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, illum corrupti. Doloremque, est aliquam
+                quis consequatur tempore voluptatem nulla nihil maxime odio ipsam officia in dolore? Id tempora ducimus
+                assumenda!
+              </p>
+              <button
+                class="invite-people bg-[#0075ff] text-white py-1 px-3 rounded-md font-bold text-[18px] outline-none border-none">Invite
+                People</button>
+            </div>
+
+            <div class="left-secure col-span-1   xl:col-span-8 border-l border-t border-b border-[#39393987]">
+
+              <div class=" relative z-0">
+
+                <div class="flex justify-between items-center border-b border-[#39393987] p-4">
+
+                  <div class="flex  items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-1.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">Ayman M.Mohamed
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">aymanbogy888@gmail.com
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none">Administrator</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+
+                </div>
+
+                <div class="flex justify-between items-center border-b border-[#39393987] p-4">
+
+                  <div class="flex  items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-2.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">Sareh Hosten
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">Sareh.Hosten@gmail.com
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none">Project
+                      Manger</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+
+                </div>
+
+                <div class="flex justify-between items-center border-b border-[#39393987] p-4">
+
+                  <div class="flex  items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-3.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">will Loqso
+
+
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">will.Loqso@gmail.com
+
+
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none">Backend
+                      Developer</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+                </div>
+
+                <div class="flex justify-between items-center border-b border-[#39393987] p-4">
+
+                  <div class="flex  items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-4.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">Elena Mckinney
+
+
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">Elena.Mckinney@gmail.com
+
+
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none ">Partner</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+
+                </div>
+
+                <div class="flex justify-between items-center border-b border-[#39393987] p-4">
+
+                  <div class="flex  items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-1.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">Tomas Kiven
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">Tomas.Kiven@gmail.com
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none">Flutter
+                      Developer</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+
+                </div>
+                <div class="flex justify-between items-center p-4 ">
+
+                  <div class="flex items-center gap-x-4 ">
+                    <img src="./Images/TableImages/img-1.jpg" class="w-[40px] h-[40px] rounded-full" alt="">
+                    <div class="text-user">
+                      <h3 class="text-xl text-white font-bold mb-2">Marvin Mckinney
+                      </h3>
+                      <span class="block text-secondary text-[13px] font-bold">Marvin.Mckinney@gmail.com
+
+
+                      </span>
+                    </div>
+                  </div>
+
+
+                  <div class="flex gap-x-6 items-center">
+                    <span
+                      class="text-white bg-[#1a1c20] py-2 px-5 rounded-lg cursor-pointer font-bold hidden md:block pointer-events-none select-none">UI/UX</span>
+                    <i class="fa-regular fa-trash-can me-2 text-xl font-medium cursor-pointer text-white deleter"></i>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="invite-member  bg-black  px-4 z-30 ">
+                <div class="flex justify-between items-center mb-8">
+                  <h2 class="text-white font-bold text-xl">Invite Member</h2>
+                  <i class="fa-solid fa-xmark text-white text-2xl cursor-pointer close-x"></i>
+                </div>
+
+                <div class="flex justify-between gap-8 items-center mt-14 flex-wrap  lg:flex-nowrap">
+                  <div class="first-name flex flex-col w-full items-center">
+                    <label for="firstName" class="text-white mb-3 text-xl font-bold">First Name</label>
+                    <input type="text" id="firstName"
+                      class="w-full text-white px-4 font-bold outline-none py-4 bg-transparent border">
+                  </div>
+
+                  <div class="last-name flex flex-col w-full items-center">
+                    <label for="lastName" class="text-white mb-3 text-xl font-bold">Last Name</label>
+                    <input type="text" id="lastName"
+                      class="w-full text-white px-4  font-bold outline-none py-4 bg-transparent border">
+                  </div>
+                </div>
+
+                <div class="email-adress mt-14 flex flex-col">
+                  <label for="email" class="text-white mb-3 text-xl font-bold">Email Address</label>
+                  <input type="text" id="email"
+                    class="w-full text-white px-4 font-bold outline-none py-4 bg-transparent border">
+                </div>
+
+                <div class="role-secure mt-14">
+                  <h2 class="text-white mb-8 text-2xl font-bold ">Role</h2>
+                  <div class="reviwer-input flex gap-4 mb-9">
+                    <input type="radio" name="role" id="review" class="h-fit" checked>
+                    <div class="label-reviwer mt-[-6px] ">
+                      <label for="review" class="text-white font-semibold">Reviwer <br> <span
+                          class="text-secondary font-bold text-[12px]">Reviewers Can't edit methodology, document
+                          requirements, edit award information, manage users. Reviewers can only see applicants that
+                          have been assigned to them to review.</span></label>
+                    </div>
+                  </div>
+
+                  <div class="reviwer-input flex gap-4">
+                    <input type="radio" name="role" id="administrator" class="h-fit">
+                    <div class="label-reviwer mt-[-6px] ">
+                      <label for="administrator" class="text-white font-semibold">Administrator <br> <span
+                          class="text-secondary font-bold text-[12px]">Administrators Can do everything, including
+                          managing users and deleting current administrators been assigned to them to
+                          review</span></label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="content-message p-0 left-0 pb-8">
+                  <div class="custom-message mt-11 mb-6">
+                    <div class="flex justify-between items-center">
+                      <h2 class="text-white font-bold text-[14px]">Custom Message</h2>
+                      <span class="text-secondary font-bold text-[14px]">Optional</span>
+                    </div>
+                  </div>
+                  <input type="text" placeholder="Optionally, provide additional custom message... "
+                    class=" text-white font-bold placeholder-shown:text-[14px] w-full border border-secondary px-4 py-6 outline-none bg-transparent mb-5">
+
+                  <div class="btn-reviewer flex justify-end pb-11 pt-5 border-b-2 border-secondary">
+                    <div class="role-btn">
+                      <button
+                        class="cancel-role text-white bg-[#404148] px-4 py-1 rounded-md font-bold ">Cancel</button>
+                      <button
+                        class="invite-role text-white ml-4 px-4 py-1 rounded-md font-bold bg-[#0362ff]">Invite</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+                <div class="delete-member ">
+                    <div class="remove-member flex justify-between items-center p-7 bg-[#39393987]">
+                      <h2 class="text-white text-xl">Remove Member</h2>
+                      <i class="fa-solid fa-xmark text-white text-xl cursor-pointer icon-delete"></i>
+                    </div>
+
+                    <div class="text-delete-member">
+                      <p class="p-7 bg-black text-secondary text-center leading-8 text-xl">You are about to remove a member which will not allow this Person to login into your organization anymore</p>
+                    </div>
+
+                    <div class="keep-member flex justify-end py-4 bg-[#39393987] flex-wrap gap-y-6 ">
+                      <button class="keep-member-btn text-white bg-black  font-bold py-2 px-3 rounded-lg mr-3">Keep Member</button>
+                      <button class="remove-member-btn text-white bg-[#ca5374]  font-bold py-2 px-4 rounded-lg mr-3">Remove Member</button>
+                    </div>
+                </div>
+              
+            </div>
+
+
+
+            <div class="parent-pending col-span-1 xl:col-span-4  ">
+              <div class="pending-invites col-span-1 xl:col-span-4 place-content-center pl-3">
+                <h2 class="text-white font-bold text-3xl tracking-wide">Pending Invites
+                </h2>
+                <p class="text-secondary mt-3 leading-7 mb-6 font-semibold">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, illum corrupti. Doloremque, est aliquam
+                  quis consequatur tempore voluptatem nulla nihil maxime odio ipsam officia in dolore? Id tempora ducimus
+                  assumenda!
+                </p>
+              </div>
+            </div>
+
+
+            <div class="active-people col-span-1 xl:col-span-8  place-content-center ">
+
+              <div class=" content-invite w-full h-fit border-2 border-[#24252b]">
+
+
+       
+              </div>
+
+              
+            </div>
+          </div>
+
+  
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script type="module"   src="./JsFiles/setting.js"></script>
+</body>
+
+</html>

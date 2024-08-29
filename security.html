@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./FontAwesomes/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Font Google Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./Images/favicon/favicon.ico" type="image">
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-[#000] transition">
+
+
+  <div class="flex">
+      <div
+        class="nav-wrapper fixed top-0 left-0 lg:top-0 lg:left-0 text-center px-5 transition lg:p-5 w-16 overflow-hidden z-40 lg:w-[300px] bg-primary h-[107vh] lg:h-screen">
+        <h1
+          class="text-2xl mt-3 italic font-bold tracking-wider text-white w-fit mx-auto relative hidden lg:block pb-5 before:content-[''] before:w-full before:z-0 before:bg-white before:h-[3px] before:absolute before:bottom-[-7px] before:left-0  after:content-[''] after:-translate-x-2/4 after:w-4 after:h-4 after:rounded-full after:bg-white after:bottom-[-12px] after:z-10 after:left-2/4 after:absolute">
+          Consequences</h1>
+        <ul class="row mt-16 lg:ml-2 h-full flex flex-col justify-center items-center lg:block lg:h-fit">
+          <li class="dashboard flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-house text-[17px] text-white cursor-pointer"></i>
+            <span class="hidden lg:block text-[#fff] text-[20px] font-bold cursor-pointer">Dashboard</span>
+          </li>
+          <li class="setting flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-gear text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer" >Settings</span>
+          </li>
+          <li class="calander flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-calendar-days text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Calender</span>
+          </li>
+          <li class="files flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-folder-open text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Files</span>
+          </li>
+          <li class="contact flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-id-card text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Contact</span>
+          </li>
+        </ul>
+      </div>
+
+    <div class="page-section w-full z-10 relative lg:pl-[300px]">
+      <div class="header py-7 px-4 bg-primary">
+        <div class="container">
+          <div class="flex items-center justify-end gap-3">
+            <img src="./Images/main.png" class="w-14 h-14 rounded-full" alt="">
+            <div class="content-text-head">
+              <h2 class="text-[17px] font-medium text-white">Alvar</h2>
+              <span class="block text-secondary text-sm font-medium">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+
+      
+      <div class="middle-system grid grid-cols-1 gap-5 pt-7 px-5 z-0 relative">
+        <div class="middle col-span-1">
+            <h1 class="text-white font-bold text-4xl tracking-wide">Settings</h1>
+
+            <div class="select-type bg-[#39393987] mt-10 border-b border-[#777777] rounded-sm">
+              <ul class="user-security flex items-center gap-x-2">
+                <li class="users-page p-5 cursor-pointer  text-secondary font-bold tracking-wide">Users</li>
+                <li class="securing security-page p-5 cursor-pointer text-secondary font-bold tracking-wide">Security</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-12 mt-16 gap-6 relative z-0">
+          <div class="first-secure  grid col-span-4 bg-[#39393987] p-4 rounded-lg">
+            <h2 class="text-white text-3xl font-bold">Site Control</h2>
+            <span class="text-[13px] text-secondary block mt-2 font-bold">Control The Website If There is Maintenace</span>
+
+            <div class="flex mt-9 justify-between items-center">
+              <span class="text-white ">Website Control</span>
+              <div class="btn-toggle bg-[#ccc] w-[100px] rounded-3xl h-[40px] relative cursor-pointer z-10">
+                <div class="icon-secure absolute top-[6px] left-[5px] bg-[#fff] w-7 h-7 rounded-full flex justify-center items-center">
+                    <span class="false"><i class="fa-solid fa-xmark"></i></span>
+                    <span class="true hide"><i class="fa-solid fa-check"></i></span>
+                </div>
+                <div class="bg-blue  absolute w-full   h-[40px] rounded-full z-[-1]"></div>
+              </div>  
+            </div>
+            <span class=" text-secondary block text-[15px]">Open/Close Website And Type The Reson</span>
+
+            <textarea name="" id="" placeholder="Close Message Content" class="placeholder:text-sm placeholder:text-secondary h-52 p-4 outline-none min-h-32 text-white max-h-72 bg-[#39393987] mt-8 resize-y" ></textarea>
+          </div>
+  
+          <div class="second-secure grid col-span-4 bg-[#39393987] p-4 rounded-lg">
+            <div>
+              <h2 class="text-white text-3xl font-bold">General Info</h2>
+              <span class="text-[13px] text-secondary block mt-2 font-bold">General Info About Your Account</span>
+              
+              <div class="first-name-secure flex flex-col mt-7 ">
+                <label for="firstSecure" class="text-secondary font-medium  opacity-80 mb-1 pl-1">First Name</label>
+                <input type="text" name="" id="firstSecure" placeholder="First Name" class="py-[10px] px-3  placeholder:text-secondary placeholder:opacity-70  bg-[#39393987] font-bold text-white outline-none">
+              </div>
+              <div class="last-name-secure flex flex-col mt-4 ">
+                <label for="lastSecure" class="text-secondary font-medium  opacity-80 mb-1 pl-1">Last Name</label>
+                <input type="text" name="" id="lastSecure" placeholder="Last Name" class="py-[10px] px-3  placeholder:text-secondary placeholder:opacity-70  bg-[#39393987] font-bold text-white outline-none">
+              </div>
+              <div class="email-secure flex flex-col mt-4 ">
+                <label for="emailSecure" class="text-secondary font-medium  opacity-80 mb-1 pl-1">Email</label>
+                <input type="email" name="" id="emailSecure" placeholder="aymanbogy888@gmail.com" readonly  class=" cursor-pointer py-[10px] px-3  placeholder:text-secondary placeholder:opacity-70  bg-[#39393987] font-bold text-white outline-none">
+              </div>
+
+              <button class="block text-center mx-auto mt-5 bg-[#0075ff] px-4 text-white font-bold rounded-lg py-[2px]">Submit</button>
+            </div>
+          </div>
+          <div class="third-secure grid col-span-4 bg-[#39393987] p-4 rounded-lg">
+            <div>
+              <h2 class="text-white text-3xl font-bold">Security Info</h2>
+              <span class="text-[13px] text-secondary block mt-2 font-bold">Security Information About Your Account</span>
+              
+              <div class="password flex justify-between items-center mt-5 pb-6 border-b border-white border-dashed">
+                <div class="text-passowrd">
+                  <h2 class="text-white text-3xl font-bold">Password</h2>
+                  <span class="text-[13px] text-secondary block mt-2 font-bold">Last Change On 25/10/2022</span>
+                </div>
+                <button class="change bg-black text-white py-[2px] px-4 rounded-md">Change</button>
+              </div>
+             
+                           
+              <div class="password flex justify-between items-center mt-5 pb-6 border-b border-white border-dashed flex-wrap gap-y-6 gap-x-2">
+                <div class="text-passowrd">
+                  <h2 class="text-white text-2xl font-bold">Two-Factor Authentication</h2>
+                  <span class="text-[13px] text-secondary block mt-2 font-bold">Enable/Disable The Feature</span>
+                </div>
+                <div class="two-toggle bg-[#0075ff] w-[100px] rounded-3xl h-[40px] relative cursor-pointer z-10">
+                  <div class="icon-password absolute top-[6px] left-[65%] bg-[#fff] w-7 h-7 rounded-full flex justify-center items-center">
+                      <span class="close hide"><i class="fa-solid fa-xmark"></i></span>
+                      <span class="right "><i class="fa-solid fa-check"></i></span>
+                  </div>
+                  <div class="bg-blue-two  absolute w-full   h-[40px] rounded-full z-[-1]"></div>
+                </div> 
+              </div>
+
+              
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="grid grid-cols-1 xl:grid-cols-12 mt-16 gap-6 relative z-0 pb-16 ">
+          <div class="social-info col-span-4 bg-[#39393987] p-4 rounded-lg">
+            <h2 class="text-white text-3xl font-bold">Social Info</h2>
+            <span class="text-[13px] text-secondary block mt-2 font-bold">Social Media Information</span>
+
+            <div class="twitter-link bg-[#393939] mt-5 py-[7px] mb-3 px-4 border-2 border-[#777777] rounded-lg flex items-center gap-3 ">
+              <i class="fa-brands fa-twitter text-blue-600 text-xl pt-[2px]"></i>
+              <a href="https://x.com/home" target="_blank" class="block pl-2 border-l-2 border-[#777777] text-[#ffffff80] cursor-pointer">Twitter Link</a>
+            </div>
+
+            <div class="twitter-link bg-[#393939] mt-5 py-[7px] mb-3 px-4 border-2 border-[#777777] rounded-lg flex items-center gap-3 ">
+              <i class="fab fa-facebook-f fs-6 text-blue-600 text-xl pt-[2px]"></i>
+              <a href="https://www.facebook.com/" target="_blank" class="block pl-2 border-l-2 border-[#777777] text-[#ffffff80] cursor-pointer">Facebook Link</a>
+            </div>
+
+            <div class="twitter-link bg-[#393939] mt-5 py-[7px] mb-3 px-4 border-2 border-[#777777] rounded-lg flex items-center gap-3 ">
+              <i class="fab fa-linkedin fs-6 text-blue-600 text-xl pt-[2px]"></i>
+              <a href="https://www.linkedin.com/feed/" target="_blank" class="block pl-2 border-l-2 border-[#777777] text-[#ffffff80] cursor-pointer">Linkedin Link</a>
+            </div>
+
+            <div class="twitter-link bg-[#393939] mt-5 py-[7px] mb-3 px-4 border-2 border-[#777777] rounded-lg flex items-center gap-3 ">
+              <i class="fab fa-youtube fs-6 text-blue-600 text-xl pt-[2px]"></i>
+              <a href="https://www.youtube.com/" target="_blank" class="block pl-2 border-l-2 border-[#777777] text-[#ffffff80] cursor-pointer">Youtube Link</a>
+            </div>
+
+    
+          </div>
+          <div class="widgest-control col-span-4 bg-[#39393987] p-4 rounded-lg pb-8" >
+            <h2 class="text-white text-3xl font-bold">Widgest Control
+            </h2>
+            <span class="text-[13px] text-secondary block mt-2 font-bold">Show/Hide Widgest
+            </span>
+
+            <div class="quick-draft mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4" id="quick">
+              <label for="quick" class="font-semibold text-secondary text-[16px]">Quick Draft</label>
+            </div>
+
+            
+            <div class="yearly_targets mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4 " id="year ">
+              <label for="year"  class="font-semibold text-secondary text-[16px]">Yearly Targets</label>
+            </div>
+            
+            <div class="tickets mt-4 flex items-center gap-3">
+              <input type="checkbox" class="text-xl w-4 h-4" id="tickets">
+              <label for="tickets" class="font-semibold text-secondary text-[16px]">Tickets Statistics</label>
+            </div>
+
+            <div class="news mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4" id="news">
+              <label for="news" class="font-semibold text-secondary text-[16px]">Latest News</label>
+            </div>
+
+            
+            <div class="tasks mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4" id="tasks">
+              <label for="tasks" class="font-semibold text-secondary text-[16px]">Latest Tasks</label>
+            </div>
+
+            <div class="items mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4" id="items">
+              <label for="items" class="font-semibold text-secondary text-[16px]">Top Search Items</label>
+            </div>
+
+            <div class="changes mt-4 flex items-center gap-3">
+              <input type="checkbox" checked class="text-xl w-4 h-4" id="changes">
+              <label for="changes" class="font-semibold text-secondary text-[16px]">Last Changes</label>
+            </div>
+            
+          </div>
+          <div class="backup-manager col-span-4 bg-[#39393987] p-4 rounded-lg">
+            <h2 class="text-white text-3xl font-bold">Backup Manager
+            </h2>
+            <span class="text-[13px] text-secondary block mt-2 font-bold">Control Backup Time And Location </span>      
+
+            <div class="daily flex gap-3 flex-wrap items-center mt-6">
+              <input type="radio" checked class="w-5 h-5 " name="manger" id="daily">
+              <label for="daily" class="text-secondary font-bold text-xl ">Daily</label>
+            </div>
+
+            <div class="weekly flex gap-3 flex-wrap items-center mt-6">
+              <input type="radio" class="w-5 h-5 " name="manger" id="weekly">
+              <label for="weekly" class="text-secondary font-bold text-xl ">Weekly</label>
+            </div>
+
+            <div class="monthly flex gap-3 flex-wrap items-center mt-6 pb-7 border-b-2 border-dashed border-secondary">
+              <input type="radio" class="w-5 h-5 " name="manger" id="monthly">
+              <label for="monthly" class="text-secondary font-bold text-xl ">Monthly</label>
+            </div>
+
+              <div class="mt-9 mx-auto text-center flex  items-center gap-3 flex-wrap">
+
+                <div class="mega flex flex-col text-center text-white border py-6 rounded-lg px-12">
+                  <i class="fa-solid fa-server mb-3"></i>
+                  <span class="block">Megaman</span>
+                </div>
+
+                <div class="mega flex flex-col text-center text-white border py-6 rounded-lg px-12 ">
+                  <i class="fa-solid fa-server mb-3"></i>
+                  <span class="block">Zero</span>
+                </div>
+
+                <div class="mega flex flex-col text-center text-white border py-6 rounded-lg px-12">
+                  <i class="fa-solid fa-server mb-3"></i>
+                  <span class="block">Sigma</span>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+  <script type="module" src="./JsFiles/secure.js"></script>
+</body>
+
+</html>

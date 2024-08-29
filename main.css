@@ -1,0 +1,452 @@
+::-webkit-scrollbar {
+    width: 7px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #393939;
+      border-radius: 20px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+      background-color: #6a6a6a;
+  }
+
+.custom-width {
+    width : calc(100% - 30px);
+    margin-left : 15px;
+    margin-top : 15px;
+}
+
+.hide {
+    display : block;
+}
+
+.leading-import {
+    line-height : 31px !important;
+}
+
+.margin-import {
+    margin-top : 90px !important;
+}
+
+
+.delete {
+    transform : scale(0);
+}
+
+.scaling .delete {
+    transform: scale(1);
+    opacity: 1;
+    transition : transform .5s ease;
+  }
+
+.active_btn {
+    background-color : #0362ff !important;
+    color : white !important;
+    
+}
+
+#myChart {
+    box-sizing: border-box;
+    display: block;
+    height: 300px !important;
+    width: 100% !important;
+}
+
+
+.pageTwo {
+    width : 100%;
+  
+}
+
+@media (max-width : 1024px) {
+    .middle-system {
+        width : calc(100% - 60px);
+        margin-left : 60px;
+    }
+    .add-task {
+        width: calc(99% - 80px) !important;
+        margin-left: calc(1% + 69px) !important;
+      }
+      #myChart {
+        box-sizing: border-box;
+        display: block;
+        height: 290px !important;
+        width: 100% !important;
+      }
+      .pageTwo {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+ }
+
+
+
+.poem {
+    overflow: auto;
+    scrollbar-color: #64748b #000000;
+    scrollbar-width: thin;
+  }
+
+  .add-task {
+    width: calc(98% - 290px);
+    margin-left: 10px;
+  }
+
+
+  .mySwiper {
+    margin : 30px 0 20px 0;
+    cursor : grab;  
+  }
+
+  .swiper-slide img {
+    width: 60px; /* مثال لحجم أصغر */
+    height: 43px;
+    border-radius: 50%; /* لجعل الصور دائرية */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* لمحاذاة النص أسفل الصورة */
+}
+
+.wrapping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+.dragging:where(div , span , .images-midlle) {
+    opacity : 0;
+}
+
+.securing {
+    border-bottom : 2px solid #0075ff;
+}
+.delete-member { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    width: 700px;
+    height: fit-content;
+    visibility : hidden;
+    background-color: #333333;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease, visibility 1s ease;
+    z-index: 8;
+}
+
+.message-deleter {
+    transform: translate(-50%, -50%) scale(1);
+    visibility : visible;
+    opacity: 1;
+}
+
+@media (max-width : 800px) {
+    .delete-member {
+        width: 100%; 
+    }
+ }
+.invite-member {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 100%;
+    height: 100%;
+    visibility : hidden;
+    background-color: black;
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease, visibility 1s ease;
+    z-index: 10;
+
+  }
+  .show-up {
+    transform: translate(-50%, -50%) scale(1);
+    visibility : visible;
+    opacity: 1;
+
+  }
+@media (max-width : 500px) {
+    .text-user h3 {
+        font-size : 13px;
+    }
+    .text-user span {
+        font-size : 9px;
+    }
+ }
+
+
+ .hide {
+    display : none;
+ }
+
+ .btn-toggle , 
+ .bg-blue {
+    transition: all .3s ease;
+ }
+
+.two-toggle {
+    transition: all .3s ease;
+}
+
+.go {
+    background : blue;
+}
+.down {
+    background : #ccc;
+}
+.switch-password {
+    left : 5px;
+    transition: all .3s ease;
+}
+.switch-icons {
+    left: 65%;
+    transition: all .3s ease;
+}
+.icon-secure ,
+.icon-password {
+    transition: all .3s ease;
+}
+
+.special {
+    width : calc(100% / 7);
+}
+.calc {
+    width : calc(100% / 7);
+    cursor : pointer;
+}
+
+
+.calender-bg:before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: blue;
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.time-task span:before {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #0d6efd;
+    right: -8px;
+    top: -16px;
+}
+    
+/* Chart Calander */
+
+@media (max-width: 600px) {
+    canvas {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-legend {
+        font-size: 10px !important; /* تصغير حجم الخط للـ labels */
+    }
+}
+
+/* Three js */
+
+canvas {
+    display : block;
+}
+
+
+
+#canvas {
+	position: fixed;
+	z-index: -1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#barChartContainer ,
+#lineChartContainer  {
+    margin-top: 60px;
+    height: 300px;
+    width: 100%;
+    border-radius: 8px
+}
+
+.chat-gpt {
+    height : fit-content;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ffffff80;
+    border-radius: 0.25rem;
+    color : white;
+    background : transparent;
+  }
+  
+  .width-50 {
+    width: 50%;
+  }
+  
+  .ml-auto {
+    margin-left: auto;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  /* Progressbar */
+  .progressbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    counter-reset: step;
+    margin: 2rem 0 4rem;
+  }
+  
+  .progressbar::before,
+  .progress {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: #dcdcdc;
+    z-index: -1;
+  }
+  
+  .progress {
+    background-color: var(--primary-color);
+    width: 0%;
+    transition: 0.3s;
+  }
+  
+  .progress-step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    background-color: #dcdcdc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+  }
+  
+  .progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .progress-step-active {
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+  }
+  
+  /* Form */
+  form {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #ffffff80;
+    border-radius: 0.35rem;
+    padding: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .form-step {
+    display: none;
+    transform-origin: top;
+    animation: animate 0.5s;
+  }
+  
+  .form-step-active {
+    display: block;
+  }
+  
+  .input-group {
+    margin: 2rem 0;
+  }
+  
+  @keyframes animate {
+    from {
+      transform: scale(1, 0);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  
+  /* Button */
+  .btns-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .form .btn {
+    padding: 0.75rem;
+    display: block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #f3f3f3;
+    text-align: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn:hover {
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px var(--primary-color);
+  }
+
+.btn-next {
+    background: #00afff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn-prev {
+    background: #595b53;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+
+
+

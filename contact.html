@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./FontAwesomes/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <!-- Font Google Open Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./Images/favicon/favicon.ico" type="image">
+  <title>Dashboard</title>
+</head>
+
+<body class="bg-[#000] transition">
+
+
+  <div class="flex">
+      <div
+        class="nav-wrapper fixed top-0 left-0 lg:top-0 lg:left-0 text-center px-5 transition lg:p-5 w-16 overflow-hidden z-40 lg:w-[300px] bg-primary h-[107vh] lg:h-screen">
+        <h1
+          class="text-2xl mt-3 italic font-bold tracking-wider text-white w-fit mx-auto relative hidden lg:block pb-5 before:content-[''] before:w-full before:z-0 before:bg-white before:h-[3px] before:absolute before:bottom-[-7px] before:left-0  after:content-[''] after:-translate-x-2/4 after:w-4 after:h-4 after:rounded-full after:bg-white after:bottom-[-12px] after:z-10 after:left-2/4 after:absolute">
+          Consequences</h1>
+        <ul class="row mt-16 lg:ml-2 h-full flex flex-col justify-center items-center lg:block lg:h-fit">
+          <li class="dashboard flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-house text-[17px] text-white cursor-pointer"></i>
+            <span class="hidden lg:block text-[#fff] text-[20px] font-bold cursor-pointer">Dashboard</span>
+          </li>
+          <li class="setting flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-gear text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer" >Settings</span>
+          </li>
+          <li class="calander flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-calendar-days text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Calender</span>
+          </li>
+          <li class="files flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-solid fa-folder-open text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Files</span>
+          </li>
+          <li class="contact flex gap-8 mb-7 transition hover:animate-wingle items-center">
+            <i class="fa-regular fa-id-card text-[17px] text-secondary cursor-pointer"></i>
+            <span class="hidden lg:block text-secondary text-[20px] font-thin cursor-pointer">Contact</span>
+          </li>
+        </ul>
+      </div>
+
+    <div class="page-section w-full z-10 relative lg:pl-[300px]">
+      <div class="header py-7 px-4 bg-primary">
+        <div class="container">
+          <div class="flex items-center justify-end gap-3">
+            <img src="./Images/main.png" class="w-14 h-14 rounded-full" alt="">
+            <div class="content-text-head">
+              <h2 class="text-[17px] font-medium text-white">Alvar</h2>
+              <span class="block text-secondary text-sm font-medium">Project Manager</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-12  gap-5 pt-7 px-5 z-0 relative">
+        <div class="middle-system col-span-12 ">
+
+            <div class="center-register h-screen relative">
+                
+            <form action="#" class="form text-white">
+                <h1 class="text-center">Registration Form</h1>
+                <!-- Progress bar -->
+                <div class="progressbar">
+                  <div class="progress" id="progress"></div>
+                  
+                  <div
+                    class="progress-step progress-step-active"
+                    data-title="Intro"
+                  ></div>
+                  <div class="progress-step" data-title="Contact"></div>
+                  <div class="progress-step" data-title="ID"></div>
+                  <div class="progress-step" data-title="Password"></div>
+                </div>
+          
+                <!-- Steps -->
+                <div class="form-step form-step-active">
+                  <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" required name="username" id="username" />
+                  </div>
+                  <div class="input-group">
+                    <label for="position">Position</label>
+                    <input type="text" name="position" id="position" />
+                  </div>
+                  <div class="">
+                    <a href="#" class="btn btn-next width-50 ml-auto">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" required name="phone" id="phone" />
+                  </div>
+                  <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" />
+                  </div>
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" name="dob" id="dob" />
+                  </div>
+                  <div class="input-group">
+                    <label for="ID">National ID</label>
+                    <input type="number" name="ID" id="ID" />
+                  </div>
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <a href="#" class="btn btn-next">Next</a>
+                  </div>
+                </div>
+                <div class="form-step">
+                  <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" />
+                  </div>
+                  <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                      type="password"
+                      name="confirmPassword"
+                      id="confirmPassword"
+                    />
+                  </div>
+                  <div class="btns-group">
+                    <a href="#" class="btn btn-prev">Previous</a>
+                    <input type="submit" value="Submit" class="btn" />
+                  </div>
+                </div>
+              </form>
+            </div>
+
+              
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+    <script src="./JsFiles/contact.js"></script>
+
+</body>
+
+</html>
